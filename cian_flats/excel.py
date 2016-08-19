@@ -3,6 +3,10 @@ from cian_flats.settings import RESULT_EXCEL_HOME
 
 
 class ExcelWorkbook:
+    """
+    Write to excel file in needed format
+    """
+
     def __init__(self, workbook_name, sheet_name):
         self.workbook_name = workbook_name
         self.workbook = Workbook()

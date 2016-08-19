@@ -1,3 +1,4 @@
+import os
 import time
 import logging
 
@@ -17,3 +18,14 @@ def timer(f):
         return res
 
     return tmp
+
+
+def create_dir(directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+
+def clear_dir(dir_name):
+    fileList = os.listdir(dir_name)
+    for fileName in fileList:
+        os.remove(dir_name + '/' + fileName)

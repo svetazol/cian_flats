@@ -11,6 +11,10 @@ from cian_flats.settings import GROUP_NUMBER
 
 
 class Flat:
+    """
+    Parse info to needed values
+    """
+
     def __init__(self, page_info_json, page_html_json):
         # timer_start = time.time()
         # Group --------------------
